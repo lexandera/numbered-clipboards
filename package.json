@@ -1,0 +1,117 @@
+{
+  "name": "numbered-clipboards",
+  "displayName": "Numbered clipboards",
+  "description": "Support for multiple clipboards",
+  "version": "0.0.3",
+  "publisher": "Lexandera",
+  "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lexandera/numbered-clipboards"
+    },
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "numbered-clipboards.copy0", "title": "Copy to clipboard #0" },
+      { "command": "numbered-clipboards.copy1", "title": "Copy to clipboard #1" },
+      { "command": "numbered-clipboards.copy2", "title": "Copy to clipboard #2" },
+      { "command": "numbered-clipboards.copy3", "title": "Copy to clipboard #3" },
+      { "command": "numbered-clipboards.copy4", "title": "Copy to clipboard #4" },
+      { "command": "numbered-clipboards.copy5", "title": "Copy to clipboard #5" },
+      { "command": "numbered-clipboards.copy6", "title": "Copy to clipboard #6" },
+      { "command": "numbered-clipboards.copy7", "title": "Copy to clipboard #7" },
+      { "command": "numbered-clipboards.copy8", "title": "Copy to clipboard #8" },
+      { "command": "numbered-clipboards.copy9", "title": "Copy to clipboard #9" },
+      
+      { "command": "numbered-clipboards.cut0", "title": "Cut to clipboard #0" },
+      { "command": "numbered-clipboards.cut1", "title": "Cut to clipboard #1" },
+      { "command": "numbered-clipboards.cut2", "title": "Cut to clipboard #2" },
+      { "command": "numbered-clipboards.cut3", "title": "Cut to clipboard #3" },
+      { "command": "numbered-clipboards.cut4", "title": "Cut to clipboard #4" },
+      { "command": "numbered-clipboards.cut5", "title": "Cut to clipboard #5" },
+      { "command": "numbered-clipboards.cut6", "title": "Cut to clipboard #6" },
+      { "command": "numbered-clipboards.cut7", "title": "Cut to clipboard #7" },
+      { "command": "numbered-clipboards.cut8", "title": "Cut to clipboard #8" },
+      { "command": "numbered-clipboards.cut9", "title": "Cut to clipboard #9" },
+      
+      { "command": "numbered-clipboards.paste0", "title": "Paste from clipboard #0" },
+      { "command": "numbered-clipboards.paste1", "title": "Paste from clipboard #1" },
+      { "command": "numbered-clipboards.paste2", "title": "Paste from clipboard #2" },
+      { "command": "numbered-clipboards.paste3", "title": "Paste from clipboard #3" },
+      { "command": "numbered-clipboards.paste4", "title": "Paste from clipboard #4" },
+      { "command": "numbered-clipboards.paste5", "title": "Paste from clipboard #5" },
+      { "command": "numbered-clipboards.paste6", "title": "Paste from clipboard #6" },
+      { "command": "numbered-clipboards.paste7", "title": "Paste from clipboard #7" },
+      { "command": "numbered-clipboards.paste8", "title": "Paste from clipboard #8" },
+      { "command": "numbered-clipboards.paste9", "title": "Paste from clipboard #9" },
+      
+      { "command": "numbered-clipboards.clear-all", "title": "Clear all clipboards" },
+      
+      { "command": "numbered-clipboards.append-to-system-clipboard", "title": "Append to system clipboard" }
+    ],
+    
+    "keybindings": [
+        { "command": "numbered-clipboards.copy0", "key": "alt+shift+c 0", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.copy1", "key": "alt+shift+c 1", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.copy2", "key": "alt+shift+c 2", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.copy3", "key": "alt+shift+c 3", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.copy4", "key": "alt+shift+c 4", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.copy5", "key": "alt+shift+c 5", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.copy6", "key": "alt+shift+c 6", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.copy7", "key": "alt+shift+c 7", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.copy8", "key": "alt+shift+c 8", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.copy9", "key": "alt+shift+c 9", "when": "editorTextFocus" },
+        
+        { "command": "numbered-clipboards.cut0", "key": "alt+shift+x 0", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.cut1", "key": "alt+shift+x 1", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.cut2", "key": "alt+shift+x 2", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.cut3", "key": "alt+shift+x 3", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.cut4", "key": "alt+shift+x 4", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.cut5", "key": "alt+shift+x 5", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.cut6", "key": "alt+shift+x 6", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.cut7", "key": "alt+shift+x 7", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.cut8", "key": "alt+shift+x 8", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.cut9", "key": "alt+shift+x 9", "when": "editorTextFocus" },
+        
+        { "command": "numbered-clipboards.paste0", "key": "alt+shift+v 0", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.paste1", "key": "alt+shift+v 1", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.paste2", "key": "alt+shift+v 2", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.paste3", "key": "alt+shift+v 3", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.paste4", "key": "alt+shift+v 4", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.paste5", "key": "alt+shift+v 5", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.paste6", "key": "alt+shift+v 6", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.paste7", "key": "alt+shift+v 7", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.paste8", "key": "alt+shift+v 8", "when": "editorTextFocus" },
+        { "command": "numbered-clipboards.paste9", "key": "alt+shift+v 9", "when": "editorTextFocus" },
+        
+        { "command": "numbered-clipboards.append-to-system-clipboard", "key": "alt+shift+a", "when": "editorTextFocus" }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.6",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
